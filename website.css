@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+header {
+    
+    overflow: hidden;
+    background: url(kobemitSchrift.jpg) no-repeat center center;
+    background-size: cover;
+    font-size:2em;
+font-weight:bold;
+line-height:100%;
+    
+}
+#messages
+{
+background-color:yellow;
+font-size:1em;
+font-weight:bold;
+line-height:100%;
+}
+#status
+{
+background-color:rgb(255, 89, 0);
+font-size:1em;
+font-weight:bold;
+color:white;
+line-height:100%;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: repeat(3, 6em 1fr) 10em;
+  gap: 0.1em;
+  box-sizing: border-box;
+  height: auto;
+  width: auto;
+  background-color: #0ebbeb ;
+  padding: 2px;
+}
+
+
+
+#container > div {
+  background-color: #109dc4;
+  padding: 2px;
+}
+
+input[type="text"], textarea, select {
+  width: 5em;
+  height: 2em; 
+  padding: 2px;
+  border: 1px solid darkgray;
+  border-radius: 1px;  
+  background: #fff;
+  margin: 1em;
+  align-items: center;
+}
+
+  
+
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  
+  position: relative;
+  margin: 1px;
+  height: 10em;
+  background: gray;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  margin-left: 33%;
+  
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 10%;
+  width: auto;
+  margin-top: 0.1em;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 2rem;
+  padding: 1rem;
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+  text-align: right;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 2rem;
+  padding: 1rem;
+  position: relative;
+  top: 0;
+  width: 100%;
+  text-align: right;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+
+/*text style*/
+.TextTrXSmall { background:transparent; font-size: x-small; max-height: 1rem; margin-bottom: 2px; margin-top: 2px; }
+.TextTrSmall { background:transparent; font-size: small; max-height: 2rem; margin-bottom: 2px; margin-top: 2px; }
+.TextTrXLarge { background:transparent; font-size: x-large; max-height: 2rem; margin-bottom: 2px; margin-top: 2px; }
+.TextTrLarge { background:transparent; font-size: large; max-height: 2rem; margin-bottom: 2px; margin-top: 2px; }
