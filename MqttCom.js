@@ -112,7 +112,7 @@ const IDArryOnlyIDS = [];
 	document.getElementById("status_messages").innerHTML='connecting';
 	var x=Math.floor(Math.random() * 10000); 
 	var cname="orderform-"+x;
-	mqtt = new Paho.MQTT.Client(host,port,cname);
+	mqtt = new Paho.MQTT.Client("wss://93.240.89.1:9001/mqtt",port,cname);
 	//document.write("connecting to "+ host);
 	var options = {
         timeout: 3,
