@@ -119,7 +119,7 @@ const IDArryOnlyIDS = [];
 		cleanSession: clean_sessions,
 		onSuccess: onConnect,
 		onFailure: onFailure,
-      
+      		useSSL: true
      };
 	 if (user_name !="")
 		options.userName=document.forms["connform"]["username"].value;
