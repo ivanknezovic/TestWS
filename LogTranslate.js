@@ -151,7 +151,7 @@ function TranslateLogList(LogList){
                  };               
         });
 
-        console.log(mappedkey);
+        //console.log(mappedkey);
         mappedkey.forEach((element) => {    //Beschränke nur auf  "rechne/calculate"   
           {
             console.log("Translated element:" +element.en); 
