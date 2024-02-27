@@ -131,7 +131,7 @@ function TranslateLogList(LogList){
 
   //Translate from Translation Json
   function TranslateFromJson(StringTotranslate){
-    var translated="Translated";
+    var translated;
     $.getJSON('./v_translations.js', (data) => {
       //Meppe zuerst auf "key" und "en"
         var mapped =data.map(function(obj) {
