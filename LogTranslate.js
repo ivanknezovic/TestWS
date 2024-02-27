@@ -131,7 +131,7 @@ function TranslateLogList(LogList){
 
   //Translate from Translation Json
   function TranslateFromJson(StringTotranslate){
-    var translated;
+    let translated=String(StringTotranslate);
     $.getJSON('./v_translations.js', (data) => {
       //Meppe zuerst auf "key" und "en"
         var mapped =data.map(function(obj) {
@@ -155,7 +155,7 @@ function TranslateLogList(LogList){
         mappedkey.forEach((element) => {    //Beschränke nur auf  "rechne/calculate"   
           {
             console.log("Translated element:" +element.en); 
-            translated=element.en;
+            translated=String(element.en);
             console.log("Translated 0:" +translated); 
             //return translated;
           }
